@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+     body {
+      margin: 0;
+      background: white ;
+      display: flex;
+      flex-direction: column;
+      min-height: vh;
+      font-family: 'sans-serif', serif;
+      line-height: 1.4;
+    }
+     .banner {
+      background: url("aodoan.jpg") no-repeat center center;
+      background-size: cover;
+      padding-top: 5rem;
+      padding-bottom: 10rem;
+      color:indianred !important;
+      position: relative;
+      text-shadow:4px 4px 8px lightcyan;
+      font-style: italic;
+    }
+    h1:hover { color: #660033;}
+   
+
+        .image-container 
+        {
+            text-align: center; /* Căn giữa văn bản */
+            position: relative; /* Để sử dụng cho hiệu ứng phóng to */
+            margin: 30px;
+        }
+
+        .zoom-image 
+        {
+            width: 500px; /* Kích thước ảnh */
+            height: auto; /* Giữ tỷ lệ khung hình */
+            transition: transform 0.3s ease; /* Hiệu ứng chuyển tiếp */
+        }
+
+        .zoom-image:hover 
+        {
+            transform: scale(1.2); /* Phóng to ảnh khi di chuột */
+            border-radius: 30px;
+            border: 5px solid #444444;
+        }
+
+        .caption 
+        {
+            margin-top: 10px; /* Khoảng cách giữa ảnh và chú thích */
+            font-size: 16px; /* Kích thước chữ */
+            color: #555; /* Màu chữ */
+        }
+        .video-container 
+        {
+        max-width: 800px; /* Chiều rộng tối đa cho khung video */
+        margin: 20px auto; /* Căn giữa khung video và tạo khoảng cách trên dưới */
+        padding: 10px; /* Tạo khoảng đệm bên trong khung video */
+        background-color: #ffffff; /* Nền trắng cho khung video */
+        border-radius: 15px; /* Bo tròn các góc khung video */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ cho khung video */
+        
+        }
+
+    video, iframe 
+    {
+        border-radius: 10px; /* Bo tròn các góc video hoặc iframe */
+        width: 85%; /* Chiều rộng video chiếm 85% khung chứa */
+        height: 60%; /* Chiều cao video cố định */
+    }
+    footer 
+    {
+        background-color: #555555; /* Màu nền đen cho footer */
+        color: white; /* Màu chữ trắng trong footer */
+        padding: 20px 0; /* Tạo khoảng đệm trên và dưới cho footer */
+        width: 100%; /* Chiều rộng footer chiếm hết màn hình */
+        text-align: left; /* Căn lề trái nội dung trong footer */
+        margin-top: auto; /* Đẩy footer xuống cuối trang nếu nội dung ngắn */
+    }
+    }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none; /* Ngăn người dùng thay đổi kích thước ô nhập */
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    }
+  
+    </style>
+</head>
+<body>
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1 style="font-size: 50px;text-align: center;color: #660033;">Chúc mừng 26-3</h1>
+    <p class="text-content"; style="color: ; font-size: 200%;text-align: center;color: #FFFFFF;">Gửi lời chúc mừng 26-3</p>
+  </div>
+   <a href="26-3.html" class="btn">Quay lại trang chủ</a>
+   <div class="image-container">
+        <img src="thiepcm26-3.jpg" alt="thi rung chuong vang" class="zoom-image">
+    </div>
+<div class="container">
+    <h2>Gửi lời chúc 26-3</h2>
+    <textarea placeholder="Nhập lời chúc của bạn tại đây..."></textarea>
+    <button onclick="sendWish()">Gửi lời chúc</button>
+</div>
+
+<script>
+    function sendWish() {
+        const message = document.querySelector('textarea').value;
+        if (message) {
+            alert("Lời chúc của bạn đã được gửi: " + message);
+        } else {
+            alert("Vui lòng nhập lời chúc trước khi gửi.");
+        }
+    }
+</script>
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>Liên hệ:</p>
+            <ul>
+                <li>Điện thoại: 0919578654</li>
+               <li>Fanpage: <a href="https://www.facebook.com/profile.php?id=100087170478681" class="link">A4-Báo Tuổi Trẻ</a></li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      background: white ;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'sans-serif', serif;
+      line-height: 1.4;
+    }
+     .banner {
+      background: url("nenhtml.jpg") no-repeat center center;
+      background-size: cover;
+      padding-top: 30rem;
+      padding-bottom: 35rem;
+      color:indianred !important;
+      position: relative;
+      text-shadow:4px 4px 8px lightcyan;
+      font-style: italic;
+    }
+    h1:hover { color: #505C81;}
+
+    .slogan { 
+    background: #FFFF99!important;
+    text-align: center !important;
+    padding: 0.5rem 1rem;
+    justify-content: space-around;
+    border-radius: 15px; /* Bo tròn góc */
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      padding: 5rem;
+    }
+    h2 {
+      color: #607d51;
+      font-size: 170%;
+      transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+    }
+
+    h2:hover {
+      transform: scale(2); /* Phóng to chữ khi di chuột */
+    }
+
+    .block_3 {
+    flex: 0 0 auto;
+    width: 33.33%;
+    }
+    .main-container {
+      display: flex;
+      padding: 20px;
+      flex: 1;
+    }
+    .content-section {
+      flex: 2.5;
+      padding: 20px;
+      min-height: 400px;
+    }
+    .content {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 30px;
+      background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .title {
+      color: #2c3e50;
+      text-align: center;
+      padding: 20px 10;
+      font-size: 30px;
+      margin-bottom: 90px;
+    }
+    h1:hover { color: darkolivegreen; } 
+    .title{
+      margin: 10px 0;
+    }
+    .anh {
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 20px; 
+      justify-content: center;
+    }
+    .image-card {
+    width: 48%; /* Đặt chiều rộng là 48% để có hai cột với khoảng cách */
+    height: 300px; /* Chiều cao hình ảnh */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 25px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    }
+    .image-card:hover {
+      transform: translateY(-10px);
+    }
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .image-card:hover img {
+      transform: scale(1.1);
+    }
+    .image-overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      padding: 25px;
+      color: white;
+      transition: bottom 0.4s ease;
+    }
+    .image-card:hover 
+    .image-overlay {
+      bottom: 0;
+    }
+    .image-overlay h3 {
+      margin: 0 0 10px 0;
+      font-size: 25px;
+      color:khaki;
+      text-shadow: 4px 4px 2px darkgray;
+    }
+    .image-overlay p {
+      margin: 0 10 15px 0;
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    .image-overlay a {
+      margin: 0 0 15px 0;
+      font-size: 20px;
+      opacity: 0.9;
+      color: skyblue;
+      font-style: italic;
+    }
+
+    .footer {
+      text-align: center !important;
+      background-color: #9BA8AB;
+      color: lightcyan;
+      padding: 0.5rem 0;
+      margin-top: auto;
+    }
+   
+    h4  {
+            font-size: 40px;
+            font-weight: bold;
+            animation: colorAnimation 5s infinite; 
+            justify-content: center;
+            text-align: center;
+        }
+
+        @keyframes colorAnimation {
+            0% {
+                color: #FF6666; 
+            }
+            25% {
+                color: #00CCCC; 
+            }
+            50% {
+                color: #6666FF; 
+            }
+            75% {
+                color: #FFFF66; 
+            }
+            100% {
+                color: #FF66CC; 
+            }
+        }
+         footer {
+        background-color: #555555; 
+        color: white; 
+        padding: 20px 0; 
+        width: 100%; 
+        text-align: left;
+        margin-top: auto; 
+    }
+    </style>
+</head>
+<body>
+
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1 style="font-size: 100px;text-align: center;">Chào mừng ngày 26/3</h1>
+    <p class="text-content"; style="color: ; font-size: 200%;text-align: center;">Thanh niên nhiệt huyết và cống hiến hết mình cho sự nghiệp xây dựng đất nước</p>
+  </div>
+  <div class="slogan">
+    <div class="row">
+      <div class="block_3">
+        <h2>Tiên phong</h2>
+        <p class="text-content"; style="color: #3A533A; font-size: 120%;">Đi đầu trong công cuộc học tập, lao động và bảo vệ Tổ quốc</p>
+      </div>
+      <div class="block_3">
+        <h2>Đoàn kết</h2>
+        <p class="text-content"; style="color: #3A533A; font-size: 120%;">Xây dựng một cộng đồng vững mạnh, gắn kết giữa các thế hệ đoàn viên</p>
+      </div>
+      <div class="block_3">
+        <h2>Cống hiến</h2>
+        <p class="text-content"; style="color: #3A533A; font-size: 120%;">Góp phần xây dựng đất nước giàu mạnh bằng tri thức, kỹ năng và lòng nhiệt huyết</p>
+      </div>
+     </div>
+    </div>
+  <div class="form-html">
+   <h4>Chi đoàn 12A4 vào ngày 26/3</h4>
+   <div class="main-container">
+      <div class="anh">
+       <div class="image-card">
+        <img src="vannghe.jpg" alt="Văn nghệ chào mừng">
+        <div class="image-overlay">
+          <h3>Văn nghệ chào mừng</h3>
+          <p>Những khoảng khắc, tiết mục đầy hấp dẫn</p>
+          <a href="vannghechaomung (1).html">Xem chi tiết</a>
+        </div>
+      </div>
+      <div class="image-card">
+       <img src="tc.jpg" alt="Các trò chơi 26-">
+        <div class="image-overlay">
+          <h3>Trò chơi</h3>
+          <p>Các trò chơi của 12a4</p>
+          <a href="trochoi.html">Xem chi tiết</a>
+        </div>
+      </div>
+      <div class="image-card">
+       <img src="thethao.jpg" alt="Thể thao chào mừng">
+        <div class="image-overlay">
+          <h3>Thể thao chào mừng</h3>
+          <p>Hoạt động chào mừng ngày nhà giáo</p>
+          <a href="thethao26-3.html">Xem chi tiết</a>
+        </div>
+      </div>
+      <div class="image-card">
+       <img src="thiepcm.jpg" alt="Chúc mừng 26-3">
+        <div class="image-overlay">
+          <h3>Chúc mừng 26-3</h3>
+          <p>Gửi lời chúc mừng 26-3 </p>
+          <a href="thiepchucmung.html">Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+        <div class="footer-container">
+            <p>Liên hệ:</p>
+            <ul>
+                <li>Điện thoại: 0919578654</li>
+               <li>Fanpage: <a href="https://www.facebook.com/profile.php?id=100087170478681" class="link">A4-Báo Tuổi Trẻ</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
